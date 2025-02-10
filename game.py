@@ -19,7 +19,7 @@ secret_word = generate_word()
 print("Guess the 5-letter word!")
 attempts = 0
 while attempts < 6:
-    guess = input("Enter your guess: ").strip().lower()
+    guess = input("Welcome to Wordle! Enter your guess: ").strip().lower()
     if len(guess) != 5:
         print("Please enter a 5-letter word.")
         continue
