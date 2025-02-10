@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Word Games</title>
+    New York Times Word Game
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
