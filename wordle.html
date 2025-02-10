@@ -12,7 +12,17 @@
         <h1 id="title">Wordle</h1>
         <hr>
         <br>
-        <div id="board">
+        <div class="game-container">
+            <div class="grid">
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <!-- Repeat for other rows -->
+            </div>
+            <input type="text" id="guess" maxlength="5">
+            <button id="submit-guess">Submit</button>
         </div>
 
         <br>
