@@ -78,6 +78,11 @@ And regular HTML img tags work, and allows setting the width or height, and clas
 
 <img width="200" alt="Hi There! Please be descriptive with Alt Text!!" class="recess" src="https://avatars.githubusercontent.com/u/42009457?s=400&u=2dcba5c146315f82f802b8b58e92a4d6b82344b3&v=4">
 
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/rivkagribov/nytgames.github.io
+
 [logo]: https://avatars.githubusercontent.com/u/42009457?s=40&v=4 "Logo Title Hover Text: The Sequel"
 
 ---
