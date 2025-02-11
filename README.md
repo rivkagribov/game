@@ -9,7 +9,7 @@
 <body>
     <div id="game-container">
         <h1>Word Games</h1>
-        <div id="game"></div>
+        <div id="game"></div> 
     </div>
     <script src="script.js"></script>
 </body>
