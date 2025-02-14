@@ -4,25 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const acrossClues = document.getElementById('across-clues');
     const downClues = document.getElementById('down-clues');
 
-    // Generate grid
-    for (let i = 0; i < gridSize * gridSize; i++) {
-        const input = document.createElement('input');
-        input.setAttribute('type', 'text');
-        input.setAttribute('maxlength', '1');
-        input.classList.add('cell');
-        grid.appendChild(input);
-    }
-
-    // Add clues (customize with your own clues)
-    const across = [
-        { number: 1, clue: "Example across clue 1" },
-        { number: 3, clue: "Example across clue 2" }
-    ];
-
-    const down = [
-        { number: 1, clue: "Example down clue 1" },
-        { number: 2, clue: "Example down clue 2" }
-    ];
+     for (let i = 0; i < gridSize; i++) {
+        for (let j = 0; j < gridSize; j++) {
+            const input = document.createElement('input');
+            input.setAttribute('type', 'text');
+            input.setAttribute('maxlength', '1');
+            input.classList.add('cell');
+            input.setAttribute('id', `cell-${i}-${j}`); // Assign unique ID
+            grid.appendChild(input);
+        }
+    } 
 
     across.forEach(item => {
         const li = document.createElement('li');
@@ -39,22 +30,28 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check puzzle function (customize with your own answers)
     function checkPuzzle() {
          const answers = [
-            ["A", "B", "C", "D", "E"],
-            ["F", "G", "H", "I", "J"],
-            ["K", "L", "M", "N", "O"],
-            ["P", "Q", "R", "S", "T"],
-            ["U", "V", "W", "X", "Y"]
-        ]; 
+            ["L", "O", "V", "E", "" ],
+            ["A", "P", "E", "S", "" ],
+            ["D", "I", "N", "O", "S"],
+            ["N", "E", "W", "Y", "C"],
+            ["T", "A", "X", "E", "S"]
+        
+ ];
+
+    function checkPuzzle() {
         let isCorrect = true;
 
         for (let i = 0; i < gridSize; i++) {
             for (let j = 0; j < gridSize; j++) {
                 const cell = document.getElementById(`cell-${i}-${j}`);
-                if (cell.value.toUpperCase() !== answers[i][j]) {
-                    cell.style.backgroundColor = 'red';
-                    isCorrect = false;
+                const userInput = cell.value.toUpperCase();
+                const correctAnswer = answers[i][j];
+
+                if (userInput === correctAnswer) {
+                    cell.style.backgroundColor = "green"; // Correct answer
                 } else {
-                    cell.style.backgroundColor = 'green';
+                    cell.style.backgroundColor = "red"; // Incorrect answer
+                    isCorrect = false;
                 }
             }
         }
