@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const grid = document.getElementById('grid');
     const acrossClues = document.getElementById('across-clues');
     const downClues = document.getElementById('down-clues');
-    const checkButton = document.getElementById('checkButton').addEventListener('click', checkPuzzle);
+    const checkButton = document.getElementById('checkButton')
+    checkButton.addEventListener('click', checkPuzzle);
 
 
      for (let i = 0; i < gridSize; i++) {
@@ -12,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
             input.setAttribute('type', 'text');
             input.setAttribute('maxlength', '1');
             input.classList.add('cell');
-            input.setAttribute('id', `cell-${i}-${j}`); // Assign unique ID
+            input.setAttribute('id', `cell-${i}-${j}`); 
             grid.appendChild(input);
         }
     } 
@@ -39,8 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
             ["T", "A", "X", "E", "S"]
         
  ];
-
-    function checkPuzzle() {
         let isCorrect = true;
 
         for (let i = 0; i < gridSize; i++) {
