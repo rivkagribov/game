@@ -38,23 +38,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Check puzzle function (customize with your own answers)
     function checkPuzzle() {
-        const answers = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]; // Example answers
+         const answers = [
+            ["A", "B", "C", "D", "E"],
+            ["F", "G", "H", "I", "J"],
+            ["K", "L", "M", "N", "O"],
+            ["P", "Q", "R", "S", "T"],
+            ["U", "V", "W", "X", "Y"]
+        ]; 
+        
         const cells = document.querySelectorAll('.cell');
         let isCorrect = true;
 
-        cells.forEach((cell, index) => {
-            if (cell.value.toUpperCase() !== answers[index]) {
-                cell.style.backgroundColor = 'red';
-                isCorrect = false;
-            } else {
-                cell.style.backgroundColor = 'green';
+        for (let i = 0; i < gridSize; i++) {
+            for (let j = 0; j < gridSize; j++) {
+                const cell = document.getElementById(`cell-${i}-${j}`);
+                if (cell.value.toUpperCase() !== answers[i][j]) {
+                    cell.style.backgroundColor = 'red';
+                    isCorrect = false;
+                } else {
+                    cell.style.backgroundColor = 'green';
+                }
             }
-        });
+        }
 
         if (isCorrect) {
-            alert("Congratulations! You solved the crossword puzzle!");
+            alert("Congratulations handsome! You solved the crossword puzzle!");
         } else {
-            alert("Oops! Some answers are incorrect. Try again.");
+            alert("Uh Oh! Some answers are incorrect. Try again :).");
         }
     }
 
