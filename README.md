@@ -1,6 +1,6 @@
-# Justins Wordle for the google.sites accessible game
+# Justins CrossWord for the google.sites accessible game
 
-A web-based Wordle game implementation where he can guess predetermined words related to us. The game features a responsive grid layout and a keyboard below the grid.
+A web-based CrossWord game implementation where he can guess predetermined words related to us. The game features a responsive grid layout and a keyboard below the grid.
 
 ## Features
 
@@ -13,7 +13,8 @@ A web-based Wordle game implementation where he can guess predetermined words re
 
 - **HTML**: Structure of the web pages.
 - **CSS**: Styling and layout, including media queries for responsiveness.
-- **JavaScript**: Game logic
+- **JavaScript and Python**: Game logic
+- 
 
 ## Installation
 
@@ -22,7 +23,7 @@ To get a local copy up and running follow these simple steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/rivkagribov/wordle-project.git
-cd wordle-project
+cd crossword-project
 Open index.html in your browser.
 Usage
 
