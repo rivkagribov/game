@@ -45,8 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
             ["P", "Q", "R", "S", "T"],
             ["U", "V", "W", "X", "Y"]
         ]; 
-        
-        const cells = document.querySelectorAll('.cell');
         let isCorrect = true;
 
         for (let i = 0; i < gridSize; i++) {
