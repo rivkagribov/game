@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
             input.setAttribute('type', 'text');
             input.setAttribute('maxlength', '1');
             input.classList.add('cell');
-            input.setAttribute('id', `cell-${i}-${j}`); 
+            input.setAttribute('id', `cell-${i}-${j}`);
             grid.appendChild(input);
         }
     } 
