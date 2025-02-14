@@ -3,23 +3,65 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.navbar .start button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+h1 {
+    margin: 20px 0;
 .grid {
     display: grid;
-    grid-template-columns: repeat(5, 30px); /* Adjust grid size as needed */
+    grid-template-columns: repeat(5, 30px); 
+    grid-template-rows: repeat(6, 50px);
     gap: 5px;
     margin-bottom: 20px;
 }
-
 .cell {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    border: 1px solid #000;
-    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    background-color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+    
+.cell.invalid {
+    background-color: black;
 }
 
+.cell.correct {
+    background-color: #66bb66; /* Muted green */
+}
+
+.cell.misplaced {
+    background-color: #ffcc66; /* Muted yellow */
+}
+
+.cell.incorrect {
+    background-color: #333; /* Dark grey */
+}   
 .clues {
     margin-top: 20px;
 }
