@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const grid = document.getElementById('grid');
     const acrossClues = document.getElementById('across-clues');
     const downClues = document.getElementById('down-clues');
+    const checkButton = document.getElementById('checkButton').addEventListener('click', checkPuzzle);
+
 
      for (let i = 0; i < gridSize; i++) {
         for (let j = 0; j < gridSize; j++) {
