@@ -69,7 +69,9 @@ h1 {
 .clues h2 {
     margin-bottom: 5px;
 }
-
+.clues h3 {
+    margin: 5px 0;
+}
 .clues ul {
     list-style: none;
     padding: 0;
