@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="wordle.css">
 </head>
 <body>
+    
     <nav>
     <div class="navbar">
-            <img id="gameImage" src="IMG_0709.jpg" alt="Game Image" >
-            <h1 >Justin's Crossword Puzzle</h1>
         <div class="start">
             <button id="resetButton">Reset</button>
             <button id="settingsButton">Settings</button>
@@ -19,9 +18,16 @@
         </div>
     </div>
 </nav>
-    <h1>Crossword Puzzle</h1>
-<div class="grid" 
-     id="grid">
+    
+    <h1>Justin's Crossword Puzzle</h1>
+<div class="grid">
+    <script>
+         for (let row = 0; row < 6; row++) {
+            for (let col = 0; col < 5; col++) {
+               document.write(`<div class="cell" id="cell-${row}-${col}"></div>`);
+                }
+            }
+    </script>
 </div>
     <div class="clues">
         <h2>Across</h2>
