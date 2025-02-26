@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ["F", "R", "U", "I", "T" ],
             ["S", "T", "I", "N", "K"],
             ["H", "O", "N", "E", "Y"],
-            ["", "A", "X", "E", "S"]
+            ["B", "E", "S", "T", ""]
         
  ];
         let isCorrect = true;
