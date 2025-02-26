@@ -33,11 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check puzzle function (customize with your own answers)
     function checkPuzzle() {
          const answers = [
-            ["L", "O", "V", "E", "" ],
-            ["A", "P", "E", "S", "" ],
-            ["D", "I", "N", "O", "S"],
-            ["N", "E", "W", "Y", "C"],
-            ["T", "A", "X", "E", "S"]
+            ["A", "M", "I", "S", "H" ],
+            ["F", "R", "U", "I", "T" ],
+            ["S", "T", "I", "N", "K"],
+            ["H", "O", "N", "E", "Y"],
+            ["", "A", "X", "E", "S"]
         
  ];
         let isCorrect = true;
