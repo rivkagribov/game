@@ -1,4 +1,4 @@
-# Justins CrossWord for the google.sites accessible game
+# CrossWord for the google.sites accessible game
 
 A web-based CrossWord game implementation where he can guess predetermined words related to us. The game features a responsive grid layout and a keyboard below the grid.
 
